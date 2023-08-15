@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-form-example',
@@ -14,7 +15,19 @@ export class FormExampleComponent {
     city: '',
   };
 
+  constructor(private http: HttpClient) {}
+
   onSubmit() {
-    console.log('Gönderilen veriler:', this.formData);
+    this.http
+      .post('https://localhost:5141/api/person', this.formData)
+      .subscribe({
+        next: (response) => {
+          console.log('Gönderilen veriler:', this.formData);
+          console.log('POST isteği başarılı!', response);
+        },
+        error: (error) => {
+          console.error('Hata:', error);
+        },
+      });
   }
 }
