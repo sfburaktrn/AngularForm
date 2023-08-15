@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using VeritabaniProjesii.Models; // Eğer Person modelini farklı bir isim alanında tanımladıysanız düzenlemeler yapın.
+using VeritabaniProjesii.Models; 
 using VeritabaniProjesi.Data;
 
 namespace VeritabaniProjesi.Controllers
