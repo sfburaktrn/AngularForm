@@ -10,6 +10,15 @@
       required
     />
 
+    <label for="lastname">Soyad:</label>
+    <input
+      type="text"
+      id="lastname"
+      name="lastname"
+      [(ngModel)]="formData.lastname"
+      required
+    />
+
     <label for="email">E-posta:</label>
     <input
       type="email"
@@ -34,15 +43,6 @@
       id="city"
       name="city"
       [(ngModel)]="formData.city"
-      required
-    />
-
-    <label for="occupation">Meslek:</label>
-    <input
-      type="text"
-      id="occupation"
-      name="occupation"
-      [(ngModel)]="formData.occupation"
       required
     />
 

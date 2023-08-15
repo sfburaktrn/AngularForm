@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
 export class FormExampleComponent {
   formData = {
     name: '',
+    lastname: '',
     email: '',
     age: 0,
     city: '',
-    occupation: '',
   };
 
   onSubmit() {
